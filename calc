@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+
+                        //UJJWALS ARETHMETIC CALCULATOR.
+
+                        /*THIS PROJECT TAUGHT ME THE FOLLOWING 
+                           1. YOU CANT BE USING << WITH CIN.
+                           2. I LEARNED ABOUT HOW SWITCH WORKS AND HOW IT IS A MORE SIMPLER FORM OF IF ELSE
+                           LOOP
+                           3.*/
+                         
+
+
+
+int main()
+{
+    float a;
+    float b;
+    float c;
+
+    char mathFunc;
+
+    cout << "WELCOME TO UJJWALS ARETMETIC CALCULATOR" << endl;
+    cout << "PLEASE ENTER 2 NUMBER THAT YOU WOULD LIKE TO INPUT!" << endl;
+    cin >> a >> b ;
+
+    cout<<"PLEASE ENTER WHAT YOU WANT TO PROCESS + , - , / OR *" << endl;
+    cin>> mathFunc;
+
+    switch (mathFunc)
+    {
+    case '+' :
+    c = a + b;
+    cout<<"YOUR NUMBER AFTER ADDITION IS "<<c<<endl;
+
+        
+        break;
+
+    case '-':
+    c = a - b;
+    cout<<"YOUR NUMBER AFTER subtraction IS "<<c<<endl;
+
+    break;
+    case '/' :
+    c = a / b;
+    cout<<"YOUR NUMBER AFTER division IS "<<c<<endl;
+
+        
+        break;
+        case '*' :
+    c = a * b;
+    cout<<"YOUR NUMBER AFTER MULTIPLICATION IS "<<c<<endl;
+
+        
+        break;
+
+    default:cout<<"THE INPUT YOU ENTERED IS INVALID";
+        break;
+    }
+
+    return 0;
+}
